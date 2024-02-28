@@ -2,39 +2,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-//padroniznado tamanho das fontes
 @layer utilities {
 
   .body{
-    @apply font-barlow text-[18px]
+    @apply font-barlow text-[18px] text-light-blue
   }
+
   .heading-1 {
-    @apply font-bellefair text-[150px];
+    @apply font-bellefair text-[150px] text-white;
   }
+
   .heading-2 {
-    @apply font-bellefair text-[100px];
+    @apply font-bellefair text-[100px] text-white;
   }
+
   .heading-3 {
-    @apply font-bellefair text-[56px]
+    @apply font-bellefair text-[56px] text-white
   }
+
   .heading-4 {
-    @apply font-bellefair text-[32px]
+    @apply font-bellefair text-[32px] tracking-heading-5
+    
   }
+
   .heading-5 {
-    @apply font-barlow-condensed text-[28px]
+    @apply font-barlow-condensed text-[28px] text-light-blue
   }
+
   .subheading-1 {
-    @apply font-bellefair text-[28px]
+    @apply font-bellefair text-[28px] text-white
   }
+
   .subheading-2 {
-    @apply font-barlow-condensed text-[14px] leading-subheading-2
+    @apply font-barlow-condensed text-[14px] tracking-subheading-2
   }
+  
   .nav{
-    @apply font-barlow-condensed text-[16px] leading-nav-text
+    @apply font-barlow-condensed text-[16px] tracking-nav text-white
   }
 }
