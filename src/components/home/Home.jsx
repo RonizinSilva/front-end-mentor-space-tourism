@@ -1,8 +1,9 @@
 import ButtonMain from "./ButtonMain"
 
 const Home = () => {
+    
     return (
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between w-full h-full mt-[250px] pl-[165px] pr-[77px] ">
             <div className="flex flex-col md:w-[450px] max-[450px] gap-6">
                 <h2 className="heading-5">SO, YOU WANT TO TRAVEL TO</h2>
                 <h1 className="heading-1">SPACE</h1>

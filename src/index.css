@@ -31,7 +31,7 @@
   }
 
   .heading-5 {
-    @apply font-barlow-condensed text-[28px] text-light-blue
+    @apply font-barlow-condensed text-[28px] text-light-blue tracking-heading-5
   }
 
   .subheading-1 {

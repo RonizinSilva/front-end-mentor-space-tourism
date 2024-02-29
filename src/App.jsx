@@ -1,5 +1,7 @@
-import Content from "./components/Content"
 import Header from "./components/Header"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./components/home/Home"
+import Destination from "./components/destination/Destination"
 
 
 
@@ -8,10 +10,15 @@ function App() {
     //fundo com imagem
     <div className="md:bg-home-destop  sm:bg-home-tablet bg-home-mobile bg-cover h-full w-screen text-white body pb-11">
       <Header/>
-      <div className="w-full h-full mt-[250px]">
-        <Content content={"home"}/>
-      </div>
-    </div>
+       <BrowserRouter>
+       <main className="w-full h-full">
+        <Routes>  
+          <Route path="/" element={<Home/>}/> 
+          <Route path="/destination" element={<Destination/>}/>   
+        </Routes>
+        </main>
+       </BrowserRouter>
+       </div>
   )
 }
 
