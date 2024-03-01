@@ -7,8 +7,8 @@ import { Context } from "../../Context"
 const NavDestinations = () => {
     const {verifyDestination} = useContext(Context);
     return (
-        <nav className="px-[123px]">
-            <ul className="flex gap-12 mr-[42px]">
+        <nav className="">
+            <ul className="flex gap-12">
                 {navLinksDestination.map((item) => (
                 <li 
                 key={item.name} 
@@ -17,7 +17,7 @@ const NavDestinations = () => {
                 onClick={() => verifyDestination(item.number)}
                 >
                     <p className="flex gap-[11px] decoration-transparent text-white  font-nav">
-                        <strong className="font-bold">{item.number}</strong>
+                        {/* <strong className="font-bold">{item.number}</strong> */}
                         {item.name}
                     </p>
                 </li>

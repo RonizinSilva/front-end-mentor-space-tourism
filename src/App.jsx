@@ -9,9 +9,9 @@ function App() {
   return (
     //fundo com imagem
     <div className="md:bg-home-destop  sm:bg-home-tablet bg-home-mobile bg-cover h-full w-screen text-white body pb-11">
-      <Header/>
        <BrowserRouter>
        <main className="w-full h-full">
+       <Header/>
         <Routes>  
           <Route path="/" element={<Home/>}/> 
           <Route path="/destination" element={<Destination/>}/>   
